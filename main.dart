@@ -77,7 +77,14 @@ class Page1 extends StatelessWidget {
               shape: BoxShape.circle,
               color: Colors.white,
             ),
-            child: const Icon(Icons.person, size: 60),
+            child: ClipOval(
+              child: Image.asset(
+                'assets/louiejie-formal.jpeg.jpg',
+                fit: BoxFit.cover,
+                width: 100,
+                height: 100,
+              ),
+            ),
           ),
           const SizedBox(height: 20),
           const Text(
